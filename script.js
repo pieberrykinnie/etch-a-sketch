@@ -18,3 +18,15 @@ for (let i = 0; i < ROW_COUNT; i++) {
         row.appendChild(cell);
     }
 }
+
+const cellList = container.querySelectorAll("#container > div > div");
+
+for (const cell of cellList) {
+    cell.addEventListener("mouseenter", (e) => {
+        e.target.classList.add("focus");
+    })
+
+    cell.addEventListener("mouseleave", (e) => {
+        e.target.classList.remove("focus");
+    })
+}
