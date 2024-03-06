@@ -8,19 +8,26 @@ body {
     margin: auto;
     display: flex;
     flex-flow: column wrap;
+    width: 640px;
+    height: 640px;
 }
 
 #container > div {
     display: flex;
+    flex: auto;
     width: 100%;
 }
 
 #container > div > div {
     border: 1px solid black;
-    width: 40px;
-    height: 40px;
+    flex: auto;
+    height: 100%;
 }
 
 .focus {
     background-color: aqua;
+}
+
+#reset-grid {
+    margin: 8px;
 }
